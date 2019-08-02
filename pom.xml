@@ -19,6 +19,7 @@
 
   <modules>
     <module>h2</module>
+    <module>mybatis</module>
   </modules>
 
   <dependencies>
