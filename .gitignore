@@ -25,3 +25,5 @@ hs_err_pid*
 *.iml
 h2/target/
 mybatis/target/
+transaction/target/
+generator/target/

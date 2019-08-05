@@ -11,7 +11,7 @@ import java.util.Date;
  */
 @Data
 @Table(name = "`${tableClass.tableName}`")
-public class ${tableClass.shortClassName}PO {
+public class ${tableClass.shortClassName}Po {
 <#if tableClass.allFields??>
   <#list tableClass.allFields as field>
 

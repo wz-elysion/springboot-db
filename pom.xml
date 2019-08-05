@@ -1,61 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>wz_ling1991</groupId>
-  <artifactId>springboot-db</artifactId>
-  <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>springboot-db</name>
+    <groupId>wz_ling1991</groupId>
+    <artifactId>springboot-db</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>springboot-db</name>
 
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.1.6.RELEASE</version>
-    <relativePath/> <!-- lookup parent from repository -->
-  </parent>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-<!--    <fastjson.version>1.2.56</fastjson.version>-->
-<!--    <com.alibaba.druid.version>1.1.16</com.alibaba.druid.version>-->
-<!--    <tk.mybatis.starter.version>2.1.1</tk.mybatis.starter.version>-->
-<!--    <github.pagehelper.version>1.2.10</github.pagehelper.version>-->
-<!--    <springfox-swagger2.version>2.9.2</springfox-swagger2.version>-->
-<!--    <pinyin4j.version>2.5.0</pinyin4j.version>-->
-<!--    <apache.commons.version>3.8.1</apache.commons.version>-->
-<!--    <hibernate-validator.version>6.0.13.Final</hibernate-validator.version>-->
-<!--    <org.apache.poi.version>3.17</org.apache.poi.version>-->
-<!--    <elasticsearch.version>6.4.2</elasticsearch.version>-->
-<!--    <feign-form.version>3.4.1</feign-form.version>-->
-<!--    <junit.version>4.12</junit.version>-->
-<!--    <orika.version>1.8.0</orika.version>-->
-<!--    <caffeine.version>2.6.2</caffeine.version>-->
-    <mysql.connector.version>8.0.17</mysql.connector.version>
-<!--    <junrar.version>2.0.0</junrar.version>-->
-<!--    <org.mapstruct.version>1.2.0.Final</org.mapstruct.version>-->
-<!--    <freemarker.version>2.1.4.RELEASE</freemarker.version>-->
-<!--    <thymeleaf.version>2.1.4.RELEASE</thymeleaf.version>-->
-  </properties>
+        <!--    <fastjson.version>1.2.56</fastjson.version>-->
+        <!--    <com.alibaba.druid.version>1.1.16</com.alibaba.druid.version>-->
+        <!--    <tk.mybatis.starter.version>2.1.1</tk.mybatis.starter.version>-->
+        <!--    <github.pagehelper.version>1.2.10</github.pagehelper.version>-->
+        <!--    <springfox-swagger2.version>2.9.2</springfox-swagger2.version>-->
+        <!--    <pinyin4j.version>2.5.0</pinyin4j.version>-->
+        <!--    <apache.commons.version>3.8.1</apache.commons.version>-->
+        <!--    <hibernate-validator.version>6.0.13.Final</hibernate-validator.version>-->
+        <!--    <org.apache.poi.version>3.17</org.apache.poi.version>-->
+        <!--    <elasticsearch.version>6.4.2</elasticsearch.version>-->
+        <!--    <feign-form.version>3.4.1</feign-form.version>-->
+        <!--    <junit.version>4.12</junit.version>-->
+        <!--    <orika.version>1.8.0</orika.version>-->
+        <!--    <caffeine.version>2.6.2</caffeine.version>-->
+        <mysql.connector.version>8.0.17</mysql.connector.version>
+        <!--    <junrar.version>2.0.0</junrar.version>-->
+        <!--    <org.mapstruct.version>1.2.0.Final</org.mapstruct.version>-->
+        <!--    <freemarker.version>2.1.4.RELEASE</freemarker.version>-->
+        <!--    <thymeleaf.version>2.1.4.RELEASE</thymeleaf.version>-->
+    </properties>
 
 
-  <modules>
-    <module>h2</module>
-    <module>mybatis</module>
-      <module>generator</module>
-  </modules>
+    <modules>
+        <module>h2</module>
+        <module>mybatis</module>
+        <module>generator</module>
+        <module>transaction</module>
+    </modules>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <optional>true</optional>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 
 </project>

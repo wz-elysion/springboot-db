@@ -44,7 +44,7 @@
             <property name="targetProject" value="src/main/java"/>
             <property name="targetPackage" value="${target.package}.model"/>
             <property name="templatePath" value="file:${model.path}/model.ftl"/>
-            <property name="fileName" value="${tableClass.shortClassName}PO.java"/>
+            <property name="fileName" value="${tableClass.shortClassName}Po.java"/>
             <!--默认值是下面这个，可以不配置-->
             <property name="templateFormatter"
                       value="tk.mybatis.mapper.generator.formatter.FreemarkerTemplateFormatter"/>
@@ -131,7 +131,7 @@
             注意，table里面很多参数都是对javaModelGenerator，context等元素的默认属性的一个复写；
         -->
         <!-- 通过使用%通配符来匹配所有数据库表 -->
-        <table tableName="vsr_camera">
+        <table tableName="demo">
             <generatedKey column="id" identity="true" sqlStatement="Mysql"/>
         </table>
 
