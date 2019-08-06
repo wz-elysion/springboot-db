@@ -6,10 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import wz_ling1991.transaction.domain.po.DemoPo;
-import wz_ling1991.transaction.mapper.DemoMapper;
-
-import java.util.List;
+import wz_ling1991.transaction.service.TransactionDemoService;
 
 /**
  * @author: ElySioN
@@ -21,12 +18,12 @@ import java.util.List;
 public class TransactionTest {
 
     @Autowired
-    private DemoMapper demoMapper;
+    private TransactionDemoService demoService;
 
     @Test
-    public void test1(){
-        List<DemoPo> rs = demoMapper.selectAll();
-        System.out.println("----");
+    public void test1() {
+        demoService.required();
+        System.out.println("----------");
     }
 
 }
