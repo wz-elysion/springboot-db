@@ -49,9 +49,15 @@
         <module>mybatis</module>
         <module>generator</module>
         <module>transaction</module>
+        <module>mongo</module>
     </modules>
 
     <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.72</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
